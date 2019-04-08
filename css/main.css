@@ -1,5 +1,5 @@
 :root {
-    --hero-url: url('../images/scott-webb-199462-unsplash\ \(1\)\ \(1\).jpg');
+    --hero-url: url('../images/jellyfish.jpg');
     --footer-url: url('../images/keyboard-footer.jpg');
 }
 * {
@@ -68,7 +68,11 @@ header {
 .project-carousel {
     z-index: 0;
 }
-
+div.carousel {
+    width: 75vw;
+    height: 75vh;
+    justify-content: center;
+}
 /* PROJECTS */
 .project-container {
     display: flex;
@@ -81,6 +85,9 @@ header {
     height: 220px;
     margin-bottom: 40px;
 }
+/* .project-three img {
+    
+} */
 
 /* ABOUT */
 .about {
