@@ -5,29 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    
+
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
     <title>Katie Jones | Web Developer</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <ul>
+
+    <!-- NavBar -->
+    <nav>
+        <div class="nav-wrapper">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#home">Home</a></li> <!-- removed active class from href, now link works */ -->
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Main Content  -->
     <main>
@@ -40,43 +41,106 @@
             </div>
         </section>
 
+         <!-- <div class="wrapper home">
+             <h1>Katie Jones </h1>
+             <h2>Web Developer</h2>
+         </div> -->
+
         <!-- Links -->
-        <a href="#">Resume</a>
-        <a href="https://www.linkedin.com/in/katie-e-jones/">LinkedIn</a>
-        <a href="https://github.com/katjone">GitHub</a>
+        <a target='_blank' href="images/resume.pdf">Resume</a>
+        <a target='_blank' href="https://www.linkedin.com/in/katie-e-jones/">LinkedIn</a>
+        <a target='_blank' href="https://github.com/katjone">GitHub</a>
 
         <!-- Projects  -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <p class="lead">Projects</p>
-                <div class="project-container">
-                    <!-- https://intense-mesa-97822.herokuapp.com/profile -->
-        
-                    <!-- Cards -->
+        <section id="projects" class="cardSection row scrollspy">
+            <div class="col m8 offset-m2 l8 offset-l2">
+                <div class="s12">
+                    <h2>Projects</h2>
                     <div class="row">
-                        <div class="col s12 m12 16">
-                            <div class="card medium">
+                        <!-- Project Item -->
+                        <div class="col s12 m12 l6">
+                            <div class="card hoverable">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="images/wayfarer.png">
                                 </div>
-                                <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4">Wayfarer<i
-                                            class="material-icons right">more_vert</i></span>
-                                    <p><a href="#">This is a link</a></p>
+                                <div class="card-content activator">
+                                    <span class="card-title activator grey-text text-darken-4">Wayfarer</span><i
+                                        class="material-icons activator right">more</i>
+
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Card Title<i
+                                    <span class="card-title grey-text text-darken-4">Wayfarer<i
                                             class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once clicked
-                                        on.
+                                    <p class="description">Wayfarer is a travel-blog app developed with a team. I worked I worked on the back-end
+                                        doing auth/ sessions. I worked with another developer to design and build the backend in 
                                     </p>
+                                    <div class="meta">
+                                        <p>Primary Developer</p>
+                                        <ul>
+                                            <li>JS</li>
+                                            <li>Node</li>
+                                            <li>Express</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                        <!-- <p>Is It Public? <span class="yes">Yes!</span></p>
+                                        <p><a href="https://Wayfarer.org/benchmarks/" target="_Blank">View Work</a>
+                                        </p> -->
+                                    </div>
+                                    <!--/meta -->
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
+                        <div class="col s12 m12 l6">
+                            <div class="card hoverable">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/birdbird-sighting-sc.png">
+                                </div>
+                                <div class="card-content activator">
+                                    <span class="card-title activator grey-text text-darken-4">birdbird</span><i
+                                        class="material-icons activator right">more</i>
 
-                    <div class="card">
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">birdbird<i
+                                            class="material-icons right">close</i></span>
+                                    <p class="description"> 
+                                        Introducing birdbird, a full-stack app designed for the
+                                        casual bird watcher. birdbird lets you record a bird sighting with ease and see
+                                        a map of all bird sightings in the San Francisco area. You can also track your
+                                        sightings and species observed in your notebook. birdbird is based on a similar
+                                        app produced by the Cornell Lab of Ornithology, but adapted to be brighter,
+                                        simpler, and with a more logical user flow / navigation.<br />
+
+                                        It utilizes the Google Maps API for viewing and recording bird sighting
+                                        locations. Additionally, the project emphasized gaining familiarity with the
+                                        model-view-controller architecture of Django and uses Postgres for the database.
+                                        For the front-end, I used HTML, CSS, Javascript, and jQuery.
+                                    </p>
+                                    <div class="meta">
+                                        <p>Primary Developer</p>
+                                        <ul>
+                                            <li>Google Maps API</li>
+                                            <li>Django with Postgres</li>
+                                            <li>JS</li>
+                                            <li>HTML / CSS</li>
+                                            
+                                        </ul>
+                                        <!-- <p>Is It Public? <span class="yes">Yes!</span></p>
+                                        <p><a href="https://Wayfarer.org/benchmarks/" target="_Blank">View Work</a>
+                                        </p> -->
+                                    </div>
+                                    <!--/meta -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Item -->
+
+                    </div> <!-- <div class="col s12" style="padding: 0;"> -->
+                </div> <!-- <div class="row"> -->
+            </div><!-- Main Container -->
+
+
+            <!-- <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="images/office.jpg">
                         </div>
@@ -109,6 +173,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section> -->
             </div>
         </section>
 
